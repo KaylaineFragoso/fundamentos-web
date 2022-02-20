@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<inframe lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html"> Home </a>
+            </li>
+            <li>
+                <a href="contato.html"> Contato </a>
+            </li>
+            </ul>
+            </nav>
+
+            <main>
+                <section id="sobreMim">
+                    <h1><span class="type-effect"></span></h1>
+                     <div class='sobreGeral'>
+                          <div class='texto'>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+              odio possimus, dolorem earum atque itaque quas soluta placeat iure
+              omnis porro cum debitis sequi libero! Deleniti vitae quis hic cumque.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius
+              inventore ullam, quia deserunt enim cumque hic officia repudiandae ad
+              ab et sapiente qui vitae accusamus adipisci provident sit assumenda
+              laboriosam!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            tempore et pariatur, illo fugit, architecto autem aperiam, dignissimos
+            dolore eius tenetur sunt illum inventore asperiores officia voluptates
+            expedita explicabo perspiciatis! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Voluptates distinctio velit, eveniet
+            placeat reiciendis, eum et tempora fuga doloribus repellendus,
+            possimus rem tempore ipsam aut eligendi beatae quidem saepe
+            temporibus.
+        </p> 
+         </div>
+ <img
+ src="/assets/img/foto.kay.jpg" 
+ alt="Foto do criador desse conteudo"
+ class="perfil"
+ />
+  </div>
+</section>
+
+     <section id="meuVideo">
+        <h2>Meu video favorito</h2>
+
+        <iframe
+         width="570"
+        height="315" 
+        src="https://www.youtube.com/embed/0zTdkEuctsY" 
+       title="YouTube video player" 
+       frameborder="0" 
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+       </iframe>
+     </section>
+
+     <div class="topo" onclick="subirTela()">
+        Voltar ao Topo
+     </div>
+    </main>
+
+    <footer>
+        <p class="footer">
+            Feito com carinho - Kaylaine Venancio - 2022 🤍 </p>
+    </footer>
+
+    <script src="./assets/js/script.js"> </script>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+        new TypeIt(".type-effect", {
+            String: ['Vamos falar sobre a Kaylaine'],
+            loop: true
+        }).go()
+    });
+    </script>
+    </div>
+   </body>
+   </html>
