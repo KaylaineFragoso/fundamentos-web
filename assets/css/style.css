@@ -1,0 +1,190 @@
+/*Estilos da página index.html*/
+
+* {
+    font-family: "Poppins", cursive;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    width: 10px;
+    box-shadow: inset 0 0 .1rem  #00000050;
+    background-color: #070303;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ec05c5;
+}
+
+:root {
+    scrollbar-color: #E3E3E3 #1D1C1A !important;
+    scrollbar-width: thin !important;
+}
+
+body {
+    background: #000000;
+  color: #fcfcfc;
+}
+
+nav {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  nav a {
+    color: #ec05c5;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: color .5s;
+  }
+
+  nav a:hover{
+    color: #bb1756;
+    text-decoration: underline 4px;
+    transition: .5s;
+  }
+
+  #sobreMim, #meuVideo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobreGeral {
+    display: flex;
+    width: 80vw;
+    justify-content: space-between
+  }
+
+
+.texto {
+    width: 65%; /*largura*/
+    text-align: justify; /* alinha o texto */
+    margin-top: 2rem;
+    display: block;
+    margin: 1rem auto 0;
+}
+
+.perfil {
+    width: 250px;
+    height: 250px;
+    border: 6px solid #9c09af;
+    border-radius: 10px 10px;
+    margin: auto
+}
+
+.perfil:hover {
+    transform: rotateY(180deg);
+  }
+
+  h2 {
+      margin-top: 2rem;
+  }
+
+  .topo {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #ec05c5;
+    padding: 1rem;
+    border-radius: 7px
+  }
+
+  .topo:hover {
+    background-color: #bb1756;
+    cursor: pointer;
+    color: #000000;
+  }
+
+footer {
+    text-align: center;
+    padding: 2rem;
+
+}
+
+/*Estilos da página contato.html*/
+
+.contato {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    min-height: 80vh;
+  }
+
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  h2 {
+    text-align: center
+  }
+  
+  .form form {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  label{
+    text-align: left;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 4px 10px;
+    border-radius: 10px;
+    border: 0;
+    color: #452f42
+  }
+  
+  #txtNome, #txtEmail, #txtAssunto {
+    margin-bottom: 1.5rem;
+  }
+  
+  button {
+    padding: 5px 1rem;
+    width: 52%;
+    margin: 1 auto;
+    display: block;
+    background-color: #ec05c5;
+    border: 2px solid #f5f3f4;
+    border-radius: 8px;
+    color: #f0e8e8;
+    text-transform: uppercase;
+  }
+  
+  button:hover {
+    background-color: #bb1756;
+    color: #ecdfdf;
+  }
+  
+  @media (max-width: 768px) {
+    .sobreGeral {
+      flex-direction: column-reverse;
+      width: 100vw;
+    }
+  
+    .texto {
+      width: 80vw;
+    }
+
+    .form {
+      width: 100vw;
+    }
+  }
